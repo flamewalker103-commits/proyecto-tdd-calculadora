@@ -11,6 +11,10 @@ describe('Calculadora', () => {
     expect(calculadora.sumar(1, 2)).toBe(3);
   });
 
+  test('suma con números negativos', () => {
+    expect(calculadora.sumar(-1, -2)).toBe(-3);
+  });
+
   test('resta de dos números', () => {
     expect(calculadora.restar(5, 2)).toBe(3);
   });
