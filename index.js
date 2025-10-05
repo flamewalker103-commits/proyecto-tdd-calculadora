@@ -1,19 +1,19 @@
 class Calculadora {
-  sumar(a, b) {
-    return a + b;
+  sumar(num1, num2) {
+    return num1 + num2;
   }
 
-  restar(a, b) {
-    return a - b;
+  restar(num1, num2) {
+    return num1 - num2;
   }
 
-  multiplicar(a, b) {
-    return a * b;
+  multiplicar(num1, num2) {
+    return num1 * num2;
   }
 
-  dividir(a, b) {
-    if (b === 0) throw new Error('No se puede dividir por cero');
-    return a / b;
+  dividir(num1, num2) {
+    if (num2 === 0) throw new Error('No se puede dividir por cero');
+    return num1 / num2;
   }
 }
 
