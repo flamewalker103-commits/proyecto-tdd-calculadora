@@ -34,4 +34,8 @@ describe('Calculadora', () => {
   test('división con un divisor cero', () => {
     expect(() => calculadora.dividir(10, 0)).toThrow('No se puede dividir por cero');
   });
+
+  test('división con números negativos', () => {
+    expect(calculadora.dividir(-10, -2)).toBe(5);
+  });
 });
