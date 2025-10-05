@@ -15,11 +15,15 @@ describe('Calculadora', () => {
     expect(calculadora.sumar(-1, -2)).toBe(-3);
   });
 
+  test('suma de un número y cero', () => {
+    expect(calculadora.sumar(5, 0)).toBe(5);
+  });
+
   test('resta de dos números', () => {
     expect(calculadora.restar(5, 2)).toBe(3);
   });
   
-  test('resta de un número y cero', () => {
+test('resta de un número y cero', () => {
     expect(calculadora.restar(5, 0)).toBe(5);
   });
 
