@@ -18,6 +18,10 @@ describe('Calculadora', () => {
   test('resta de dos números', () => {
     expect(calculadora.restar(5, 2)).toBe(3);
   });
+  
+  test('resta de un número y cero', () => {
+    expect(calculadora.restar(5, 0)).toBe(5);
+  });
 
   test('multiplicación de dos números', () => {
     expect(calculadora.multiplicar(3, 4)).toBe(12);
